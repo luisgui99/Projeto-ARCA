@@ -4,6 +4,10 @@
       box-sizing: border-box;
       font-family: 'LouisGeorgeCafe';
     }
+body.dark-theme {
+    --bg-principal: var(--cor-marrom-escuro); /* Inverte o fundo para a cor mais escura [1] */
+    --texto-principal: var(--cor-pessego);    /* Inverte o texto para a cor mais clara [1] */
+}
     @font-face {
         font-family: 'HeartBubble';
         src: url('./fonts/HeartBubble.otf');
@@ -13,7 +17,7 @@
         src: url(./fonts/LouisGeorgeCafe.ttf);
     }    
     body {
-      background-color: #fff7f2;
+      background-color: #734930;
       color: #3D1B07;
     }
 
@@ -57,12 +61,19 @@
       color: #3D1B07;
     }
 
-    .dark-mode {
+    .perfil {
+      width: 40px;
+      height: 40px;
+      background-color: #f6c15b;
+      border-radius: 50%;
+
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 8px;
-      color: white;
-      font-size: 0.9rem;
+    }
+    .perfil i{
+      font-size: 40px;
+      color: #5a3b1a;
     }
 
     .hero {
@@ -73,14 +84,14 @@
     .hero h1 {
       font-size: 2.5rem;
       margin-bottom: 15px;
-      color: #734930;
+      color: #F9AF58;
     }
 
     .hero p {
       max-width: 700px;
       margin: auto;
       line-height: 1.6;
-      color: #555;
+      color: #F9AF58;
     }
 
     .carousel {
@@ -92,6 +103,7 @@
       overflow: hidden;
       position: relative;
       box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
     }
 
     .slides {
@@ -256,4 +268,9 @@
       .slide img {
         height: 300px;
       }
+      
     }
+    .news {
+        color: #F9AF58; 
+        text-align: center;
+      }
