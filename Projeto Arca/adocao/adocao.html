@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção - Projeto ARCA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adocao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Projeto ARCA</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Agende uma Consulta</a></li>
+                <li><a href="adocao.html" class="active">Adoção</a></li>
+                <li><a href="">Denúncias</a></li>
+                <li><a href="">Solicitações</a></li>
+                <li><a href="">Saiba Mais</a></li>
+                <li><div class="perfil"><i class="fa-solid fa-circle-user"></i></div></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="adoption-page">
+        <h1 class="adoption-title">Adoção</h1>
+
+        <div class="adoption-wrapper">
+            <aside class="filters-sidebar">
+                <div class="filter-header">
+                    <span class="filter-toggle"><i class="fa-solid fa-chevron-left"></i></span>
+                    <h3>Filtros</h3>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Espécie</h4>
+                    <div class="filter-options">
+                        <label class="toggle-filter">
+                            <input type="checkbox" value="gato" class="filter-checkbox">
+                            <span class="toggle-switch"></span>
+                            <span class="label-text">Gato</span>
+                        </label>
+                        <label class="toggle-filter">
+                            <input type="checkbox" value="cachorro" class="filter-checkbox">
+                            <span class="toggle-switch"></span>
+                            <span class="label-text">Cachorro</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Gênero</h4>
+                    <div class="filter-options">
+                        <label class="toggle-filter">
+                            <input type="checkbox" value="femea" class="filter-checkbox">
+                            <span class="toggle-switch"></span>
+                            <span class="label-text">Fêmea</span>
+                        </label>
+                        <label class="toggle-filter">
+                            <input type="checkbox" value="macho" class="filter-checkbox">
+                            <span class="toggle-switch"></span>
+                            <span class="label-text">Macho</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Porte</h4>
+                    <div class="filter-options">
+                        <label class="toggle-filter">
+                            <input type="checkbox" value="pequeno" class="filter-checkbox">
+                            <span class="toggle-switch"></span>
+                            <span class="label-text">Pequeno</span>
+                        </label>
+                        <label class="toggle-filter">
+                            <input type="checkbox" value="medio" class="filter-checkbox">
+                            <span class="toggle-switch"></span>
+                            <span class="label-text">Médio</span>
+                        </label>
+                        <label class="toggle-filter">
+                            <input type="checkbox" value="grande" class="filter-checkbox">
+                            <span class="toggle-switch"></span>
+                            <span class="label-text">Grande</span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="animals-section">
+                <div class="animals-grid" id="animalsGrid">
+                    <!-- Cartões de animais serão inseridos aqui -->
+                </div>
+
+                <div class="pagination" id="pagination">
+                    <!-- Bolinhas de paginação serão inseridas aqui -->
+                </div>
+
+                <div class="cta-section">
+                    <p>Deseja pedir um cadastro para adoção? <a href="">Clique aqui</a></p>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            UVV - Universidade de Vila Velha<br>
+            Av. Comissário José Dantas de Melo, 21 - Boa Vista, Vila Velha - ES
+        </p>
+    </footer>
+
+    <script src="adocao.js"></script>
+</body>
+</html>
